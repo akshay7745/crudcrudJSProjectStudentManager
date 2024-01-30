@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Manager</title>
+    <style>
+      #mainHeading,
+      #studentCountContainer,
+      #studentsList h2 {
+        text-align: center;
+      }
+      #ulParent {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainContainer">
+      <h1 id="mainHeading">Student Manager</h1>
+      <div id="studentCountContainer">
+        <span>All Students: </span><span id="totalStudents">0</span>
+      </div>
+      <div id="formContainer">
+        <form>
+          <label for="name">Name: </label>
+          <input id="name" name="name" type="text" />
+          <br />
+          <label for="mobile">Mobile: </label>
+          <input id="mobile" name="mobile" type="text" />
+          <br />
+          <label for="address">Address: </label>
+          <input id="address" name="address" type="text" />
+          <br />
+          <button id="formBtn" type="submit">Add</button>
+        </form>
+      </div>
+      <div id="studentsList">
+        <h2>All Students</h2>
+        <ul id="ulParent"></ul>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+  <script src="index.js"></script>
+</html>
